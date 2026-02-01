@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #1f1c2c, #928dab);
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.45);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lower {
+  position: relative;
+  top: 6px;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.intro {
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.block {
+  background: rgba(255,255,255,0.15);
+  padding: 1.8rem;
+  border-radius: 16px;
+  transition: transform 0.25s ease;
+}
+
+.block:hover {
+  transform: translateY(-6px);
+}
+
+.tilt:hover {
+  transform: translateY(6px);
+}
+
+.content h2 {
+  margin: 1.5rem 0 1rem;
+}
+
+.content p {
+  margin-bottom: 1.4rem;
+  line-height: 1.6;
+}
+
+.note {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background: rgba(0,0,0,0.35);
+  border-left: 4px solid white;
+}
+
+.columns {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 280px;
+  background: rgba(255,255,255,0.15);
+  padding: 1.6rem;
+  border-radius: 14px;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+.footer {
+  margin-top: 4rem;
+  padding: 1.2rem;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+.l {
+    user-select: none;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  max-height: 420px;
+  height: auto;
+  object-fit: cover;
+  margin: 1.6rem auto;
+  border-radius: 16px;
+}
+@media (max-width: 600px) {
+  img {
+    max-width: 100%;
+  }
+}
+.hero {
+    font-size: 70px;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+}
+h1 {
+    font-size: 49px;
+}
+@media (max-width: 600px) {
+  .hero {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.hero {
+  margin-bottom: 1.5rem;
+}
+body {
+  width: 100vw;
+  margin: 0;
+}
