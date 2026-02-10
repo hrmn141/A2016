@@ -91,6 +91,8 @@ nav {
   display: flex;
   gap: 1.8rem;
   flex-wrap: wrap;
+  width: 100vw;
+  margin-left: -2.5rem;
 }
 
 .col {
