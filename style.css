@@ -14,17 +14,31 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
   background: rgba(0,0,0,0.55);
   backdrop-filter: blur(8px);
+  padding: 0.5rem 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 60px;
+  height: 70px;
   width: auto;
-  display: block;
+  max-width: 100%;
   margin: 0%;
 }
+@media (max-width: 600px) {
+  .logo img {
+    height: 45px;
+  }
+ nav {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
 
 .nav {
   list-style: none;
